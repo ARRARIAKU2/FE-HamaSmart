@@ -1,4 +1,5 @@
-import { PropsWithChildren, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import type { PropsWithChildren } from "react";
 
 function PublicProvider({ children }: PropsWithChildren) {
   const [show, setShow] = useState<boolean>(false);
