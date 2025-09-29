@@ -3,6 +3,7 @@ import type { PropsWithChildren } from "react";
 function PrivateProvider({ children }: PropsWithChildren) {
   const [show, setShow] = useState(false);
   const token = localStorage.getItem("token");
+  console.log(token);
 
   useEffect(() => {
     if (!token) {
